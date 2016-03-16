@@ -15,8 +15,9 @@
         <meta content='lab2023' name='author'>
         <meta content='' name='description'>
         <meta content='' name='keywords'>
-        <link href="./assets/css/application-a07755f5.css" rel="stylesheet" type="text/css" /><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <!--    <link href="assets/images/favicon.ico" rel="icon" type="image/ico" />-->
+        <link href="./assets/css/application-a07755f5.css" rel="stylesheet" type="text/css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+            <link href="assets/images/favicon.ico" rel="icon" type="image/ico" />
 
     </head>
     <body class='main page'>
@@ -81,43 +82,43 @@
                 <ul id='dock'>
                     <li class='active launcher'>
                         <i class='icon-dashboard'></i>
-                        <a href="dashboard.html">Dashboard</a>
+                        <a href="#">Dashboard</a>
                     </li>
                     <li class='launcher'>
                         <i class='icon-file-text-alt'></i>
-                        <!--<a href="forms.html">Forms</a>-->
+                        <a href="#">Forms</a>
                     </li>
                     <li class='launcher'>
                         <i class='icon-table'></i>
-                        <!--<a href="tables.html">Tables</a>-->
+                        <a href="#">Tables</a>
                     </li>
                     <li class='launcher dropdown hover'>
                         <i class='icon-flag'></i>
-                        <!--<a href='#'>Reports</a>-->
+                        <a href='#'>Reports</a>
                         <ul class='dropdown-menu'>
                             <li class='dropdown-header'>Launcher description</li>
                             <li>
-                                <!--<a href='#'>Action</a>-->
+                                <a href='#'>Action</a>
                             </li>
                             <li>
-                                <!--<a href='#'>Another action</a>-->
+                                <a href='#'>Another action</a>
                             </li>
                             <li>
-                                <!--<a href='#'>Something else here</a>-->
+                                <a href='#'>Something else here</a>
                             </li>
                         </ul>
                     </li>
                     <li class='launcher'>
                         <i class='icon-bookmark'></i>
-                        <!--<a href='#'>Bookmarks</a>-->
+                        <a href='#'>Bookmarks</a>
                     </li>
                     <li class='launcher'>
                         <i class='icon-cloud'></i>
-                        <!--<a href='#'>Backup</a>-->
+                        <a href='#'>Backup</a>
                     </li>
                     <li class='launcher'>
                         <i class='icon-bug'></i>
-                        <!--<a href='#'>Feedback</a>-->
+                        <a href='#'>Feedback</a>
                     </li>
                 </ul>
                 <div data-toggle='tooltip' id='beaker' title='Made by lab2023'></div>
@@ -126,7 +127,7 @@
             <section id='tools'>
                 <ul class='breadcrumb' id='breadcrumb'>
                     <li class='title'>Dashboard</li>
-                    <!--<li><a href="#">Lorem</a></li>-->
+                    <li><a href="#">Lorem</a></li>
                     <li class='active'><a href="#">ipsum</a></li>
                 </ul>
                 <div id='toolbar'>
@@ -203,8 +204,14 @@
         </div>
         <!-- Footer -->
         <!-- Javascripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript"></script><script src="assets/javascripts/application-985b892b.js" type="text/javascript"></script>
-        <!-- Google Analytics -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
+            
+        </script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript">
+            
+        </script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
+            
+        </script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
+         Google Analytics 
         <script>
             var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
             (function (d, t) {
