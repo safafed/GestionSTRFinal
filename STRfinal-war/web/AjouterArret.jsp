@@ -178,17 +178,7 @@
                     <div class='panel-heading'>
                         <i class='icon-flag icon-large'></i>
                         Ajouter un arrêt!
-                        <!--                        <div class='panel-tools'>
-                                                    <div class='btn-group'>
-                                                        <a class='btn' href='#'>
-                                                            <i class='icon-refresh'></i>
-                                                            Refresh statics
-                                                        </a>
-                                                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Toggle'>
-                                                            <i class='icon-chevron-down'></i>
-                                                        </a>
-                                                    </div>
-                                                </div>-->
+
                     </div>
                     <div class='panel-body'>
 

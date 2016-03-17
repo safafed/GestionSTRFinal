@@ -14,10 +14,13 @@
         <meta content='lab2023' name='author'>
         <meta content='' name='description'>
         <meta content='' name='keywords'>
+
+
+
         <link href="./assets/css/application-a07755f5.css" rel="stylesheet" type="text/css" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
-            <link href="assets/images/favicon.ico" rel="icon" type="image/ico" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
     </head>
     <body class='main page'>
@@ -179,63 +182,63 @@
                     <div class='panel-heading'>
                         <i class='icon-flag icon-large'></i>
                         Modifier un arrêt
-<!--                        <div class='panel-tools'>
-                            <div class='btn-group'>
-                                <a class='btn' href='#'>
-                                    <i class='icon-refresh'></i>
-                                    Refresh statics
-                                </a>
-                                <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Toggle'>
-                                    <i class='icon-chevron-down'></i>
-                                </a>
-                            </div>
-                        </div>-->
-                    </div>
-                    <div class='panel-body'>
 
-<div class="row-fluid">
-      <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-        <option data-subtext="Rep California">Tom Foolery</option>
-        <option data-subtext="Sen California">Bill Gordon</option>
-        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
-        <option data-subtext="Rep Alabama">Mario Flores</option>
-        <option data-subtext="Rep Alaska">Don Young</option>
-        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
-      </select>
-      
-    </div>
-     
                     </div>
                     
+                    
+                    <div class='panel-body'>
+                     
+
+                      <div class='form-group'>  
+                      <label class='col-lg-2 control-label'>Choisir l'arrêt à modifier</label>  
                        
-  </div>
-                        </div>
-            
-            
+                            <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                <option data-subtext="Rep California">Tom Foolery</option>
+                                <option data-subtext="Sen California">Bill Gordon</option>
+                                <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                                <option data-subtext="Rep Alabama">Mario Flores</option>
+                                <option data-subtext="Rep Alaska">Don Young</option>
+                                <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                            </select>
+
+                       <button class='btn btn-safa' type='submit' >Charger les données</button>
+                      </div>
+                         <form class='form-horizontal'> 
+                       <fieldset>
+                        <legend>Formulaire de modification d'un arrêt</legend>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Nom de l'arrêt</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='nom Arret' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Adresse de l'arrêt</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='adresse Arret' type='text'>
+                                    </div>
+                                </div>
+                        <div class='form-inline' >
+                                    <button class='btn btn-primary' type='submit' >Modifier</button>
+                                    <a class='btn btn-primary' href='dashboard.jsp' >Annuler</a>
+                                </div>
                     </div>
-               
-    
-      
-        <!-- Footer -->
-        <!-- Javascripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
-            
-        </script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript">
-            
-        </script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
-            
-        </script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
-         Google Analytics 
-                      
-        <script>
-            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-            (function (d, t) {
-                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g, s)
-            }(document, 'script'));
-        </script>
-    </body>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<!-- Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
+
+</script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript">
+
+</script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
+
+</script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+</body>
 </html>
