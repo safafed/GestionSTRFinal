@@ -1,11 +1,10 @@
 <%-- 
-    Document   : dashboard
-    Created on : 16 mars 2016, 14:39:55
+    Document   : ModifierArret
+    Created on : 17 mars 2016, 11:34:29
     Author     : safa
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html class='no-js' lang='en'>
     <head>
@@ -17,6 +16,7 @@
         <meta content='' name='keywords'>
         <link href="./assets/css/application-a07755f5.css" rel="stylesheet" type="text/css" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
             <link href="assets/images/favicon.ico" rel="icon" type="image/ico" />
 
     </head>
@@ -80,9 +80,9 @@
             <section id='sidebar'>
                 <i class='icon-align-justify icon-large' id='toggle'></i>
                 <ul id='dock'>
-                    <li class='active launcher'>
+                    <li class='launcher'>
                         <i class='icon-dashboard'></i>
-                        <a href="#">Dashboard</a>
+                        <a href="dashboard.jsp">Dashboard</a>
                     </li>
                     <li class='launcher dropdown hover'>
                         <i class='icon-road'></i>
@@ -100,7 +100,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class='launcher dropdown hover'>
+                    <li class='active launcher dropdown hover'>
                         <i class='icon-flag'></i>
                         <a href="#">Arrêt</a>
                         <ul class='dropdown-menu'>
@@ -163,50 +163,23 @@
                                 <a href='SupprimerInfoTrafic.jsp'>Supprimer info-trafic</a>
                             </li>
                         </ul>
-                    </li><!--
-                    <li class='launcher'>
-                        <i class='icon'></i>
-                        <a href='#'>Feedback</a>
-                    </li>-->
                 </ul>
                 <div data-toggle='tooltip' id='beaker' title='Made by lab2023'></div>
             </section>
             <!-- Tools -->
             <section id='tools'>
                 <ul class='breadcrumb' id='breadcrumb'>
-                    <li class='title'>Dashboard</li>
+                    <li class='title'> Arrêt / Gestion des arrêts</li>
                 </ul>
-<!--                <div id='toolbar'>
-                    <div class='btn-group'>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Building'>
-                            <i class='icon-building'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Laptop'>
-                            <i class='icon-laptop'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Calendar'>
-                            <i class='icon-calendar'></i>
-                            <span class='badge'>3</span>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Lemon'>
-                            <i class='icon-lemon'></i>
-                        </a>
-                    </div>
-                    <div class='label label-danger'>
-                        Danger
-                    </div>
-                    <div class='label label-info'>
-                        Info
-                    </div>
-                </div>-->
+
             </section>
             <!-- Content -->
             <div id='content'>
                 <div class='panel panel-default'>
                     <div class='panel-heading'>
-                        <i class='icon-beer icon-large'></i>
-                        Statistiques
-                        <div class='panel-tools'>
+                        <i class='icon-flag icon-large'></i>
+                        Modifier un arrêt
+<!--                        <div class='panel-tools'>
                             <div class='btn-group'>
                                 <a class='btn' href='#'>
                                     <i class='icon-refresh'></i>
@@ -216,38 +189,33 @@
                                     <i class='icon-chevron-down'></i>
                                 </a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class='panel-body'>
-                        <div class='page-header'>
-                            <h4>System usage</h4>
-                        </div>
-                        <div class='progress'>
-                            <div class='progress-bar progress-bar-success' style='width: 35%'></div>
-                            <div class='progress-bar progress-bar-warning' style='width: 20%'></div>
-                            <div class='progress-bar progress-bar-danger' style='width: 10%'></div>
-                        </div>
-                        <div class='page-header'>
-                            <h4>User statics</h4>
-                        </div>
-                        <div class='row text-center'>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#d4ecfd' data-fgcolor='#30a1ec' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='50'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#c4e9aa' data-fgcolor='#8ac368' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='75'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#cef3f5' data-fgcolor='#5ba0a3' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='35'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#f8d2e0' data-fgcolor='#b85e80' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='85'>
-                            </div>
-                        </div>
+
+<div class="row-fluid">
+      <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+        <option data-subtext="Rep California">Tom Foolery</option>
+        <option data-subtext="Sen California">Bill Gordon</option>
+        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+        <option data-subtext="Rep Alabama">Mario Flores</option>
+        <option data-subtext="Rep Alaska">Don Young</option>
+        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+      </select>
+      
+    </div>
+     
                     </div>
-                </div>
-            </div>
-        </div>
+                    
+                       
+  </div>
+                        </div>
+            
+            
+                    </div>
+               
+    
+      
         <!-- Footer -->
         <!-- Javascripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
@@ -257,7 +225,10 @@
         </script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
             
         </script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
          Google Analytics 
+                      
         <script>
             var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
             (function (d, t) {
@@ -268,4 +239,3 @@
         </script>
     </body>
 </html>
-

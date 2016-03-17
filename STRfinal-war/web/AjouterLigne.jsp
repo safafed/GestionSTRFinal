@@ -1,6 +1,6 @@
 <%-- 
-    Document   : dashboard
-    Created on : 16 mars 2016, 14:39:55
+    Document   : AjouterLigne
+    Created on : 17 mars 2016, 11:33:32
     Author     : safa
 --%>
 
@@ -80,11 +80,11 @@
             <section id='sidebar'>
                 <i class='icon-align-justify icon-large' id='toggle'></i>
                 <ul id='dock'>
-                    <li class='active launcher'>
+                    <li class='launcher'>
                         <i class='icon-dashboard'></i>
-                        <a href="#">Dashboard</a>
+                        <a href="dashboard.jsp">Dashboard</a>
                     </li>
-                    <li class='launcher dropdown hover'>
+                    <li class='active launcher dropdown hover'>
                         <i class='icon-road'></i>
                         <a href="#">Ligne</a>
                         <ul class='dropdown-menu'>
@@ -163,50 +163,23 @@
                                 <a href='SupprimerInfoTrafic.jsp'>Supprimer info-trafic</a>
                             </li>
                         </ul>
-                    </li><!--
-                    <li class='launcher'>
-                        <i class='icon'></i>
-                        <a href='#'>Feedback</a>
-                    </li>-->
                 </ul>
                 <div data-toggle='tooltip' id='beaker' title='Made by lab2023'></div>
             </section>
             <!-- Tools -->
             <section id='tools'>
                 <ul class='breadcrumb' id='breadcrumb'>
-                    <li class='title'>Dashboard</li>
+                    <li class='title'> Ligne / Gestion des lignes</li>
                 </ul>
-<!--                <div id='toolbar'>
-                    <div class='btn-group'>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Building'>
-                            <i class='icon-building'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Laptop'>
-                            <i class='icon-laptop'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Calendar'>
-                            <i class='icon-calendar'></i>
-                            <span class='badge'>3</span>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Lemon'>
-                            <i class='icon-lemon'></i>
-                        </a>
-                    </div>
-                    <div class='label label-danger'>
-                        Danger
-                    </div>
-                    <div class='label label-info'>
-                        Info
-                    </div>
-                </div>-->
+
             </section>
             <!-- Content -->
             <div id='content'>
                 <div class='panel panel-default'>
                     <div class='panel-heading'>
-                        <i class='icon-beer icon-large'></i>
-                        Statistiques
-                        <div class='panel-tools'>
+                        <i class='icon-road icon-large'></i>
+                        Ajouter une ligne
+<!--                        <div class='panel-tools'>
                             <div class='btn-group'>
                                 <a class='btn' href='#'>
                                     <i class='icon-refresh'></i>
@@ -216,34 +189,42 @@
                                     <i class='icon-chevron-down'></i>
                                 </a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class='panel-body'>
-                        <div class='page-header'>
-                            <h4>System usage</h4>
-                        </div>
-                        <div class='progress'>
-                            <div class='progress-bar progress-bar-success' style='width: 35%'></div>
-                            <div class='progress-bar progress-bar-warning' style='width: 20%'></div>
-                            <div class='progress-bar progress-bar-danger' style='width: 10%'></div>
-                        </div>
-                        <div class='page-header'>
-                            <h4>User statics</h4>
-                        </div>
-                        <div class='row text-center'>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#d4ecfd' data-fgcolor='#30a1ec' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='50'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#c4e9aa' data-fgcolor='#8ac368' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='75'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#cef3f5' data-fgcolor='#5ba0a3' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='35'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#f8d2e0' data-fgcolor='#b85e80' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='85'>
-                            </div>
-                        </div>
+
+                        <form class='form-horizontal'>
+                            <fieldset>
+                                <legend>Formulaire d'ajout d'une ligne</legend>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Code de la ligne</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='code ligne' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif 5 premiers arrêts</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 1' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif 3 seconds arrêts</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 2' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif à partir du 9 ème arrêt</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 3' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-inline' >
+                                    <button class='btn btn-primary' type='submit' >Ajouter</button>
+                                    <a class='btn btn-primary' href='dashboard.jsp' >Annuler</a>
+                                </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -268,4 +249,5 @@
         </script>
     </body>
 </html>
+
 

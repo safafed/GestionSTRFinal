@@ -1,11 +1,10 @@
 <%-- 
-    Document   : dashboard
-    Created on : 16 mars 2016, 14:39:55
+    Document   : AjouterInfoTrafic
+    Created on : 17 mars 2016, 11:36:15
     Author     : safa
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html class='no-js' lang='en'>
     <head>
@@ -80,9 +79,9 @@
             <section id='sidebar'>
                 <i class='icon-align-justify icon-large' id='toggle'></i>
                 <ul id='dock'>
-                    <li class='active launcher'>
+                    <li class='launcher'>
                         <i class='icon-dashboard'></i>
-                        <a href="#">Dashboard</a>
+                        <a href="dashboard.jsp">Dashboard</a>
                     </li>
                     <li class='launcher dropdown hover'>
                         <i class='icon-road'></i>
@@ -148,7 +147,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class='launcher dropdown hover'>
+                    <li class='active launcher dropdown hover'>
                         <i class='icon-warning-sign'></i>
                         <a href='#'>Info-Trafic</a>
                         <ul class='dropdown-menu'>
@@ -163,50 +162,23 @@
                                 <a href='SupprimerInfoTrafic.jsp'>Supprimer info-trafic</a>
                             </li>
                         </ul>
-                    </li><!--
-                    <li class='launcher'>
-                        <i class='icon'></i>
-                        <a href='#'>Feedback</a>
-                    </li>-->
                 </ul>
                 <div data-toggle='tooltip' id='beaker' title='Made by lab2023'></div>
             </section>
             <!-- Tools -->
             <section id='tools'>
                 <ul class='breadcrumb' id='breadcrumb'>
-                    <li class='title'>Dashboard</li>
+                    <li class='title'> Info-Trafic / Gestion du trafic</li>
                 </ul>
-<!--                <div id='toolbar'>
-                    <div class='btn-group'>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Building'>
-                            <i class='icon-building'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Laptop'>
-                            <i class='icon-laptop'></i>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Calendar'>
-                            <i class='icon-calendar'></i>
-                            <span class='badge'>3</span>
-                        </a>
-                        <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Lemon'>
-                            <i class='icon-lemon'></i>
-                        </a>
-                    </div>
-                    <div class='label label-danger'>
-                        Danger
-                    </div>
-                    <div class='label label-info'>
-                        Info
-                    </div>
-                </div>-->
+
             </section>
             <!-- Content -->
             <div id='content'>
                 <div class='panel panel-default'>
                     <div class='panel-heading'>
-                        <i class='icon-beer icon-large'></i>
-                        Statistiques
-                        <div class='panel-tools'>
+                        <i class='icon-warning-sign icon-large'></i>
+                        Ajouter une info-trafic
+<!--                        <div class='panel-tools'>
                             <div class='btn-group'>
                                 <a class='btn' href='#'>
                                     <i class='icon-refresh'></i>
@@ -216,10 +188,10 @@
                                     <i class='icon-chevron-down'></i>
                                 </a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class='panel-body'>
-                        <div class='page-header'>
+<!--                        <div class='page-header'>
                             <h4>System usage</h4>
                         </div>
                         <div class='progress'>
@@ -242,7 +214,7 @@
                             </div>
                             <div class='col-md-3'>
                                 <input class='knob second' data-bgcolor='#f8d2e0' data-fgcolor='#b85e80' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='85'>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -268,4 +240,3 @@
         </script>
     </body>
 </html>
-
