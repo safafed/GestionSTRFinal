@@ -16,7 +16,7 @@
         <meta content='' name='keywords'>
         <link href="./assets/css/application-a07755f5.css" rel="stylesheet" type="text/css" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-            <link href="assets/images/favicon.ico" rel="icon" type="image/ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
     </head>
     <body class='main page'>
@@ -178,43 +178,56 @@
                     <div class='panel-heading'>
                         <i class='icon-road icon-large'></i>
                         Supprimer une ligne
-<!--                        <div class='panel-tools'>
-                            <div class='btn-group'>
-                                <a class='btn' href='#'>
-                                    <i class='icon-refresh'></i>
-                                    Refresh statics
-                                </a>
-                                <a class='btn' data-toggle='toolbar-tooltip' href='#' title='Toggle'>
-                                    <i class='icon-chevron-down'></i>
-                                </a>
-                            </div>
-                        </div>-->
+
                     </div>
                     <div class='panel-body'>
-<!--                        <div class='page-header'>
-                            <h4>System usage</h4>
-                        </div>
-                        <div class='progress'>
-                            <div class='progress-bar progress-bar-success' style='width: 35%'></div>
-                            <div class='progress-bar progress-bar-warning' style='width: 20%'></div>
-                            <div class='progress-bar progress-bar-danger' style='width: 10%'></div>
-                        </div>
-                        <div class='page-header'>
-                            <h4>User statics</h4>
-                        </div>
-                        <div class='row text-center'>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#d4ecfd' data-fgcolor='#30a1ec' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='50'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#c4e9aa' data-fgcolor='#8ac368' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='75'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#cef3f5' data-fgcolor='#5ba0a3' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='35'>
-                            </div>
-                            <div class='col-md-3'>
-                                <input class='knob second' data-bgcolor='#f8d2e0' data-fgcolor='#b85e80' data-height='140' data-inputcolor='#333' data-thickness='.3' data-width='140' type='text' value='85'>
-                            </div>-->
+
+                        <div class='form-group'>  
+                      <label class='col-lg-2 control-label'>Choisir la ligne à supprimer</label>  
+                       
+                            <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                <option data-subtext="Rep California">Tom Foolery</option>
+                                <option data-subtext="Sen California">Bill Gordon</option>
+                                <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                                <option data-subtext="Rep Alabama">Mario Flores</option>
+                                <option data-subtext="Rep Alaska">Don Young</option>
+                                <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                            </select>
+
+                       <button class='btn btn-safa' type='submit' >Charger les données</button>
+                      </div>
+                         <form class='form-horizontal'> 
+                       <fieldset>
+                        <legend>Suppression d'une ligne</legend>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Code de la ligne</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='code ligne' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif 5 premiers arrêts</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 1' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif 3 seconds arrêts</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 2' type='text'>
+                                    </div>
+                                </div>
+                                <div class='form-group'>
+                                    <label class='col-lg-2 control-label'>Tarif à partir du 9 ème arrêt</label>
+                                    <div class='col-lg-10'>
+                                        <input class='form-control' placeholder='Tarif 3' type='text'>
+                                    </div>
+                                </div>
+                        <div class='form-inline' >
+                                    <button class='btn btn-primary' type='submit' >Supprimer</button>
+                                    <a class='btn btn-primary' href='dashboard.jsp' >Annuler</a>
+                                </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -222,22 +235,15 @@
         </div>
         <!-- Footer -->
         <!-- Javascripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
-            
-        </script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript">
-            
-        </script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
-            
-        </script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
-         Google Analytics 
-        <script>
-            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-            (function (d, t) {
-                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g, s)
-            }(document, 'script'));
-        </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
+
+</script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript">
+
+</script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript">
+
+</script><script src="./assets/js/application-985b892b.js" type="text/javascript"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
     </body>
 </html>
 
